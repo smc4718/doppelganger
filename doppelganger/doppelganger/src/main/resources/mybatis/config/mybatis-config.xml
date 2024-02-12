@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    
+  <!-- 설정 -->
+  <settings>
+    <setting name="mapUnderscoreToCamelCase" value="true"/>
+  </settings>
+  
+  <typeAliases>
+    <typeAlias alias="UserDto"         type="com.doppelganger.dto.UserDto"/>
+    <typeAlias alias="LeaveUserDto"    type="com.doppelganger.dto.LeaveUserDto"/>
+    <typeAlias alias="InactiveUserDto" type="com.doppelganger.dto.InactiveUserDto"/>
+    <typeAlias alias="FreeDto"         type="com.doppelganger.dto.FreeDto"/>
+    <typeAlias alias="BlogDto"         type="com.doppelganger.dto.BlogDto"/>
+    <typeAlias alias="BlogImageDto"    type="com.doppelganger.dto.BlogImageDto"/>
+    <typeAlias alias="CommentDto"      type="com.doppelganger.dto.CommentDto"/>
+    <typeAlias alias="UploadDto"       type="com.doppelganger.dto.UploadDto"/>
+    <typeAlias alias="AttachDto"       type="com.doppelganger.dto.AttachDto"/>
+  </typeAliases>
+
+</configuration>
