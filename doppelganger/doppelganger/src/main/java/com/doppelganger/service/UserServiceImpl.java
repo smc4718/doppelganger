@@ -38,8 +38,8 @@ public class UserServiceImpl implements UserService {
   private final MySecurityUtils mySecurityUtils;
   private final MyJavaMailUtils myJavaMailUtils;
   
-  private final String client_id = "RTJMyHb54a63lvLzPh7A";
-  private final String client_secret = "0xR9yv0oo3";
+  private final String client_id = "0ZmDGyDBmv6fI7U_AB5y";
+  private final String client_secret = "Q5iw70bf6I";
   
   @Override
   public void login(HttpServletRequest request, HttpServletResponse response) throws Exception {

@@ -40,11 +40,6 @@
     
   </form>
   
-  <ul class="sub_menu">
-    <li><a href="${contextPath}/user/agree.form">회원가입</a>
-    <li><a href="${contextPath}">아이디/비밀번호 찾기</a>
-  </ul>
-  
   <hr class="my-4">
   
   <div class="text-center">
