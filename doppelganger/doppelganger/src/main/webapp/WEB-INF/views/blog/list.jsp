@@ -14,7 +14,7 @@
 
   <div class="text-center mb-3">
     <a href="${contextPath}/blog/write.form">
-      <button type="button" class="btn btn-outline-primary">새글작성</button>
+      <button type="button" class="btn btn-outline-primary">QnA작성</button>
     </a>
   </div>
   

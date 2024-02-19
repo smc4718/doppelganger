@@ -35,7 +35,7 @@
 
   <div class="text-center">
     <a href="${contextPath}/upload/write.form">
-      <button type="button" class="btn btn-outline-primary">새글작성</button>
+      <button type="button" class="btn btn-outline-primary">업로드</button>
     </a>
   </div>
   

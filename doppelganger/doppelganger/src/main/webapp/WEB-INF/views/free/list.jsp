@@ -20,7 +20,7 @@
 
   <div class="text-center mb-3">
     <a href="${contextPath}/free/write.form">
-      <button type="button" class="btn btn-outline-primary">새글작성</button>
+      <button type="button" class="btn btn-outline-primary">글쓰기</button>
     </a>
     <a href="${contextPath}/free/list.do">
       <button type="button" class="btn btn-outline-success">전체보기</button>
