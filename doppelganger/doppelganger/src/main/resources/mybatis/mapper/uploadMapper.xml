@@ -5,7 +5,6 @@
 
 <mapper namespace="com.doppelganger.dao.UploadMapper">
 
-  <!-- UploadDto에는 UserDto가 포함되어 있으므로 resultMap을 만들어서 UploadDto의 설명을 넣어줌 -->
   <resultMap type="UploadDto"      id="UploadMap">
     <id      column="UPLOAD_NO"    property="uploadNo"/>
     <result  column="TITLE"        property="title"/>
@@ -32,7 +31,6 @@
   </resultMap>
 
   <insert id="insertUpload" parameterType="UploadDto">
-    <!-- INSERT 수행 이전에 파라미터 UploadDto의 uploadNo 필드에 UPLOAD_SEQ.NEXTVAL값을 저장한다. -->
     <selectKey order="BEFORE" resultType="int" keyProperty="uploadNo">
       SELECT UPLOAD_SEQ.NEXTVAL
         FROM DUAL

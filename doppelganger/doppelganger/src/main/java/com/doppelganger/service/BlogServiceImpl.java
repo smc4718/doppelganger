@@ -80,8 +80,6 @@ public class BlogServiceImpl implements BlogService {
   @Override
   public int addBlog(HttpServletRequest request) {
 
-    //** 수정된 메소드 **//
-    
     // BLOG_T에 추가할 데이터
     String title = request.getParameter("title");
     String contents = request.getParameter("contents");
@@ -119,7 +117,6 @@ public class BlogServiceImpl implements BlogService {
   
   public List<String> getEditorImageList(String contents) {
     
-    //** 신규 메소드 **//
     // Editor에 추가한 이미지 목록 반환하기 (Jsoup 라이브러리 사용)
     
     List<String> editorImageList = new ArrayList<>();
@@ -201,8 +198,6 @@ public class BlogServiceImpl implements BlogService {
   @Override
   public int modifyBlog(HttpServletRequest request) {
     
-    //** 수정된 메소드 **//
-    
     // 수정할 제목/내용/블로그번호
     String title = request.getParameter("title");
     String contents = request.getParameter("contents");
@@ -260,8 +255,6 @@ public class BlogServiceImpl implements BlogService {
   
   @Override
   public int removeBlog(int blogNo) {
-    
-    //** 수정된 메소드 **//
     
     // BLOG_IMAGE_T 목록 가져와서 파일 삭제
     List<BlogImageDto> blogImageList = blogMapper.getBlogImageList(blogNo);

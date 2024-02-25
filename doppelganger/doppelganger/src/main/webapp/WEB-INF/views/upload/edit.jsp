@@ -108,16 +108,12 @@
   
   const fnAddAttach = () => {
     $('#btn_add_attach').click(() => {
-      // 폼을 FormData 객체로 생성한다.
       let formData = new FormData();
-      // 첨부된 파일들을 FormData에 추가한다.
       let files = $('#files').prop('files');
       $.each(files, (i, file) => {
-        formData.append('files', file);  // 폼에 포함된 파라미터명은 files이다. files는 여러 개의 파일을 가지고 있다.
+        formData.append('files', file);
       })
-      // 현재 게시글 번호(uploadNo)를 FormData에 추가한다.
       formData.append('uploadNo', '${upload.uploadNo}');
-      // FormData 객체를 보내서 저장한다.
       $.ajax({
         // 요청
         type: 'post',

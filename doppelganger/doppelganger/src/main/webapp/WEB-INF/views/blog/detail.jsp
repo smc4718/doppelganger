@@ -24,7 +24,6 @@
   <!-- 블로그 상세보기 -->
   <div>
     <div class="text-center">
-      <!-- 블로그의 작성자는 편집/삭제를 수행할 수 있다. -->
       <c:if test="${sessionScope.user.userNo == blog.userDto.userNo}">
         <form id="frm_btn" method="post">
           <input type="hidden" name="blogNo" value="${blog.blogNo}">
@@ -289,38 +288,6 @@
     fnBlind();
     fnCommentReplyAdd();
     fnCommentRemove();
-    
-    /*
-    <div>
-
-      // 삭제된 댓글/답글
-      <div>삭제된 댓글입니다</div>
-    
-      // 정상 댓글/답글
-      <div>이름</div>
-      <div>내용</div>
-      <div style="font-size: 12px;">작성일자</div>
-      <div>
-        <button type="button" class="btn btn-outline-primary btn-sm btn_open_reply">답글달기</button>
-        // 댓글 작성자만 삭제
-        <input type="hidden" value="commentNo값">
-        <i class="fa-regular fa-circle-xmark ico_remove_comment"></i>        
-      </div>
-      <div class="blind frm_add_reply_wrap">
-        <form class="frm_add_reply">
-          <input type="hidden" name="userNo" value="">
-          <input type="hidden" name="blogNo" value="">
-          <input type="hidden" name="groupNo" value="">
-          <div class="input-group mb-3">
-            <textarea rows="2" name="contents" class="form-control" placeholder="답글을 입력하세요"></textarea>
-            <button type="button" class="btn btn-success btn-sm btn_add_reply">답글작성완료</button>
-          </div>
-        </form>
-      </div>
-      
-    </div>
-    <hr class="my-3">
-    */
     
   </script>
 

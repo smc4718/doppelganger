@@ -89,7 +89,7 @@ public class UploadServiceImpl implements UploadService {
         
         multipartFile.transferTo(file);
         
-        String contentType = Files.probeContentType(file.toPath());  // 이미지의 Content-Type은 image/jpeg, image/png 등 image로 시작한다.
+        String contentType = Files.probeContentType(file.toPath());  // 이미지의 Content-Type은 image/jpeg, image/png 등 image로 시작 
         int hasThumbnail = (contentType != null && contentType.startsWith("image")) ? 1 : 0;
         
         if(hasThumbnail == 1) {
@@ -109,7 +109,7 @@ public class UploadServiceImpl implements UploadService {
         
         attachCount += uploadMapper.insertAttach(attach);
         
-      }  // if
+      } // if
       
     }  // for
     
@@ -360,7 +360,7 @@ public class UploadServiceImpl implements UploadService {
         
         multipartFile.transferTo(file);
         
-        String contentType = Files.probeContentType(file.toPath());  // 이미지의 Content-Type은 image/jpeg, image/png 등 image로 시작한다.
+        String contentType = Files.probeContentType(file.toPath());  // 이미지의 Content-Type은 image/jpeg, image/png 등 image로 시작 
         int hasThumbnail = (contentType != null && contentType.startsWith("image")) ? 1 : 0;
         
         if(hasThumbnail == 1) {

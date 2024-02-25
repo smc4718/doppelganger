@@ -15,15 +15,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
-/*
- * google 계정으로 이메일 보내기 위해서 앱 비밀번호를 생성해 둬야 한다.
- * 
- * 1. 구글에 로그인한다.
- * 2. [계정] - [보안]
- * 3. [2단계 인증] - [앱 비밀번호] - [App name] : doppelganger 입력
- * 4. 생성된 비밀번호를 복사해서 email.properties 파일에 붙여넣기한다.
- */
-
 @PropertySource(value="classpath:email.properties")
 @Component
 public class MyJavaMailUtils {
